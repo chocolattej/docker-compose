@@ -75,7 +75,6 @@ services:
         #- "~/config:/usr/share/graylog/data/config:rw"
       - "graylog_data:/usr/share/graylog/data/data"
       - "graylog_journal:/usr/share/graylog/data/journal"
-      - "graylog_etc:/etc:rw"
       - "/etc/localtime:/etc/localtime:ro"
     restart: "on-failure"
     extra_hosts:
@@ -86,4 +85,3 @@ volumes:
   graylog-datanode:
   graylog_data:
   graylog_journal:
-  graylog_etc:
